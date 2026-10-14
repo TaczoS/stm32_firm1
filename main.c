@@ -2,7 +2,7 @@
 
 #define RCC_APB2ENR ( *(volatile uint32_t *)0x40021018U)
 /* Defined the rcc (clock thingy) */
-#define GPIOC_CRH (*(volatile uint32_t *)0x40011010U)
+#define GPIOC_CRH (*(volatile uint32_t *)0x40011004U)
 #define GPIOC_BSRR (*(volatile uint32_t *)0x40011010U)
 
 /*GPIOC registers initialized */
@@ -23,7 +23,7 @@ int main(void)
 	{
 		GPIOC_BSRR = (1U << 29); /* putting the port 13 at low  29 - 16 = 13 basically resetting it to 0 since it is active low */
 		delay(500000U);
-		GPIOC_VSRR = (1U << 13); /* now  setting it to 1 to turn off the led */
+		GPIOC_BSRR = (1U << 13); /* now  setting it to 1 to turn off the led */
 		delay(500000U);
 	}
 }
