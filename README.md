@@ -39,3 +39,11 @@ arm-none-eabi-gcc \
   startup.o main.o \
   -o firmware.elf
 "
+
+or just run the Makefile 
+
+"
+    make clean
+    make 
+    make flash
+"
