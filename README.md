@@ -1,4 +1,4 @@
-# STM32 Bare-Metal LED Blink
+# STM32 Bare metal 
 
 My first bare-metal firmware project for the STM32F103C8T6.
 
