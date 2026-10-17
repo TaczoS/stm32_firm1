@@ -1,8 +1,7 @@
 # STM32 Bare metal 
 
-My first bare-metal firmware project for the STM32F103C8T6.
+My first bare metal firmware project for the STM32F103C8T6.
 
-Goal: blink the onboard PC13 LED without an operating system or HAl
 
 compile the main.c file using 
 "
